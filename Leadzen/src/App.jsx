@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import Card from './components/Card'
+import Navbar from './components/Navbar'
 import './App.css'
 
 function App() {
@@ -7,9 +8,9 @@ function App() {
 
   return (
     <div className="App">
-     <h1 className="font-extrabold text-[#ea580c] text-[32px]">
-      Hello world!
-    </h1>
+      <Navbar/>
+     <Card/>
+    
     </div>
   )
 }
