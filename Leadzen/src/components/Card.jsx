@@ -10,8 +10,8 @@ const view=()=>{
   return (
    
     <div className='mt-[1rem]'>
-    <div className='border-solid border-2 border-grey rounded-xl mt-[10px] bg-white shadow-lg shadow-[grey]'>
-      <div className='flex  justify-between items-center m-10 '>
+    <div className='border-solid border-2 border-grey rounded-xl mt-[10px] bg-white min-w-[450px] shadow-lg shadow-[grey]'>
+      <div className='flex  justify-between items-center m-10 flex-col  lg:flex-row md:flex-row flex-wrap '>
         <div>
           <h1 className='text-[15px]  text-black'>{props.username}</h1>
         </div>
@@ -35,8 +35,7 @@ const view=()=>{
 
     <Popup trigger={buttonPopup} setTrigger={setButtonPopup} >
     <div className="h-[100%] grid rounded-xl items-center border-solid border-grey border-[2px] ">
-    <p className='text-[15px] font-bold text-[gray]'>{props.catchphrase}</p>
-        <p className='text-[15px] font-bold text-[grey]'>{props.bs}</p>
+   
        <div className='ml-5'>
         <div className='flex items-center '  >
         <h1 className='text-[15px] mr-5 font-bold'>Name</h1>
@@ -64,6 +63,12 @@ const view=()=>{
         <h1 className='text-[15px] font-bold mr-5'>Website</h1>
         <p className='text-[black] text-[12px] '>{props.website}</p>
           </div>
+        
+        <div className='border-solid border-[2px] border-[grey] mr-5 rounded-xl'>
+
+        <p className='text-[15px] font-bold text-[gray]'>{props.catchphrase}</p>
+        <p className='text-[15px] font-bold text-[grey]'>{props.bs}</p>
+        </div>
         
         </div>
         <div className='ml-5'>
